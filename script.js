@@ -5,10 +5,12 @@ const reset = document.querySelector('.reset');
 let num = parseInt(countElement.innerText);
 
 function colorCount() {
-	if (num <= 5) {
-		countElement.style.color = 'red';
-	} else {
+	if (num === 0) {
 		countElement.style.color = 'blue';
+	} else if (num > 0) {
+		countElement.style.color = 'green';
+	} else {
+		countElement.style.color = 'red';
 	}
 }
 
